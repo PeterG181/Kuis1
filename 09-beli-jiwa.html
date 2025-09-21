@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beli - Asuransi Jiwa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <span class="logo-text">CarSurance</span>
+  </header>
+
+  <section class="main-container">
+    <div class="login-container">
+      <h2>Form Pembelian Asuransi Jiwa</h2>
+      <form id="form-beli-jiwa">
+
+        <label for="nama-jiwa">Nama Lengkap (sesuai KTP)</label>
+        <input type="text" id="nama-jiwa" required>
+
+        <label for="lahir">Tanggal Lahir</label>
+        <input type="date" id="lahir" required>
+
+        <label for="pertanggungan">Besaran Pertanggungan</label>
+        <select id="pertanggungan" required>
+          <option value="">-- Pilih --</option>
+          <option value="1000000000">Rp1.000.000.000</option>
+          <option value="2000000000">Rp2.000.000.000</option>
+          <option value="3500000000">Rp3.500.000.000</option>
+          <option value="5000000000">Rp5.000.000.000</option>
+          <option value="10000000000">Rp10.000.000.000</option>
+        </select>
+
+        <div id="premi-jiwa" style="margin:12px 0; font-weight:bold;"></div>
+
+        <button type="submit" class="btn primary">Hitung Premi & Checkout</button>
+        <a href="01-index.html" class="btn ghost">Kembali</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 CarSurance Marketplace
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Checkout - CarSurance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="main-header"><span class="logo-text">CarSurance</span></header>
+  <section class="checkout">
+    <h2>Checkout</h2>
+    <p>Total Premi: <span id="checkout-total"></span></p>
+    <label>Metode Pembayaran</label>
+    <select id="pembayaran">
+      <option>Transfer Bank</option>
+      <option>Virtual Account</option>
+      <option>E-Wallet</option>
+    </select>
+    <button class="btn primary" onclick="selesaiCheckout()">Bayar</button>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beli - Asuransi Mobil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <span class="logo-text">CarSurance</span>
+  </header>
+
+  <section class="main-container">
+    <div class="login-container">
+      <h2>Form Pembelian Asuransi Mobil</h2>
+      <form id="form-beli-mobil">
+        
+        <label for="merk">Merk Mobil</label>
+        <input type="text" id="merk" required>
+
+        <label for="jenis">Jenis Mobil</label>
+        <input type="text" id="jenis" required>
+
+        <label for="tahun">Tahun Pembuatan</label>
+        <input type="number" id="tahun" min="1980" max="2025" required>
+
+        <label for="harga">Harga Mobil</label>
+        <input type="number" id="harga" placeholder="contoh: 250000000" required>
+
+        <label for="plat">Nomor Plat Mobil</label>
+        <input type="text" id="plat" required>
+
+        <label for="mesin">Nomor Mesin</label>
+        <input type="text" id="mesin" required>
+
+        <label for="rangka">Nomor Rangka</label>
+        <input type="text" id="rangka" required>
+
+        <label for="pemilik">Nama Pemilik</label>
+        <input type="text" id="pemilik" required>
+
+        <label for="foto">Upload Foto Kendaraan</label>
+        <p class="note">Upload foto tampak depan, belakang, kiri, kanan, dashboard, dan mesin</p>
+        <input type="file" id="foto" multiple accept="image/*" required>
+
+        <div id="premi-mobil"></div>
+
+        <button type="submit" class="btn primary">Hitung Premi & Checkout</button>
+        <a href="01-index.html" class="btn ghost">Kembali</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 CarSurance Marketplace
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

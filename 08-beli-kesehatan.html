@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Beli - Asuransi Kesehatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <span class="logo-text">CarSurance</span>
+  </header>
+
+  <section class="main-container">
+    <div class="login-container">
+      <h2>Form Pembelian Asuransi Kesehatan</h2>
+      <form id="form-beli-kesehatan">
+
+        <label for="nama">Nama Lengkap (sesuai KTP)</label>
+        <input type="text" id="nama" required>
+
+        <label for="lahir">Tanggal Lahir</label>
+        <input type="date" id="lahir" required>
+
+        <label for="pekerjaan">Pekerjaan</label>
+        <input type="text" id="pekerjaan" required>
+
+        <label for="merokok">Merokok?</label>
+        <select id="merokok" required>
+          <option value="">-- Pilih --</option>
+          <option value="ya">Ya</option>
+          <option value="tidak">Tidak</option>
+        </select>
+
+        <label for="hipertensi">Riwayat Hipertensi?</label>
+        <select id="hipertensi" required>
+          <option value="">-- Pilih --</option>
+          <option value="ya">Ya</option>
+          <option value="tidak">Tidak</option>
+        </select>
+
+        <label for="diabetes">Diabetes?</label>
+        <select id="diabetes" required>
+          <option value="">-- Pilih --</option>
+          <option value="ya">Ya</option>
+          <option value="tidak">Tidak</option>
+        </select>
+
+        <div id="premi-kesehatan" style="margin:12px 0; font-weight:bold;"></div>
+
+        <button type="submit" class="btn primary">Hitung Premi & Checkout</button>
+        <a href="01-index.html" class="btn ghost">Kembali</a>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 CarSurance Marketplace
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
